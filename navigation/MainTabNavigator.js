@@ -4,7 +4,7 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
+import APICallScreen from '../screens/APICallScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import GPSScreen from '../screens/GPSScreen';
 
@@ -26,11 +26,11 @@ HomeStack.navigationOptions = {
   ),
 };
 
-const LinksStack = createStackNavigator({
-  Links: LinksScreen,
+const APICallStack = createStackNavigator({
+  Links: APICallScreen,
 });
 
-LinksStack.navigationOptions = {
+APICallStack.navigationOptions = {
   tabBarLabel: 'API Call',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
@@ -70,7 +70,7 @@ GPSStack.navigationOptions = {
 
 export default createBottomTabNavigator({
   HomeStack,
-  LinksStack,
+  APICallStack,
   SettingsStack,
   GPSStack,
 });
