@@ -35,6 +35,7 @@ export default class GPSScreen extends React.Component {
   };
 
   render() {
+    console.log('gps load time:', new Date());
     // let text = 'Waiting..';
     let text ="";
     let lat = "";

@@ -24,6 +24,7 @@ export default class CameraExample extends React.Component {
     }
   };
   render() {
+    console.log('Start time: ', new Date());
     const { hasCameraPermission, showCamera } = this.state;
     if (showCamera) {
       if (hasCameraPermission === null) {

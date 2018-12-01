@@ -47,7 +47,7 @@ export default class SettingsScreen extends React.Component {
     )
     endTime = new Date();
     time = endTime - startTime;
-    console.log('time:', time)
+    console.log('table display time:', time)
     // this.setState({
     //   time: time
     // });
@@ -56,6 +56,7 @@ export default class SettingsScreen extends React.Component {
   }
 
   render() {
+    console.log('table nav time:', new Date());
     return (
       <View style={{ flex: 1, alignItems: 'center' }}>
         <Button
